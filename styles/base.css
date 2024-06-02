@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: green;
+    color:aliceblue;
+    display: grid;
+
+}
+
+.logo{ 
+    height: 70px;
+
+}
+
+.header-text{
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 20px 0px;
+}
+
+.link-header{
+    height: 40px;
+    background-color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.link-header, a{
+    text-decoration: none;
+    list-style : none;
+    color: white
+    
+}
+
+ul, li, a:hover{
+    color: blue;
+}
+
+
+.grid-container{
+    width: auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    height: auto;
+    grid-column-gap: 10px;
+    margin: 0px 15px
+
+}
+
+.about{
+    margin: 20px
+}
+
+h1{
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color:aliceblue
+}
+
+.profile-pic{
+    width: 150px;
+    height: 210px;
+    float: right;
+    margin: 0px 30px;
+     
+}
+
+.nigeria-pic{
+    height: 120px;
+    width: auto;
+    float:left;
+    margin-right: 10px;
+
+}
+
+figcaption{
+    margin-left: 25px;
+}
+
+section{
+    background: grey;
+    border-radius: 10px;
+    color:black;
+    border-bottom: 4px solid black;
+}
+
+h3{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px 0
+
+}
+
+.country{
+    margin: 110px 20px 0px 20px
+}
+
+.country-item{
+    margin-top: 10px
+}
+
+
+.asides{
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+
+.aside-container{
+    margin: 150px 0px 0px 30px;
+   
+}
+
+.link-aside, .link-items{
+    color:black;
+}
+
+.list-items{
+    padding:3px 0;
+    
+}
+
+
+footer{
+    background-color: green;
+    height: auto;
+    text-align: center;
+    height: 50px;
+    display: grid;
+    justify-content: center;
+ 
+}
+
+h3{
+    padding-top: 10px
+}
+
+
+@media(max-width:500px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .asides{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .aside-container{
+        margin: 20px 0px 0px 30px;
+       
+    }
+
+}
+    
