@@ -60,7 +60,7 @@ ul, li, a:hover{
     margin: 20px
 }
 
-h1{
+.headline{
     background-color: green;
     text-align: center;
     padding: 10px;
