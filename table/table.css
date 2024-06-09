@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+table{
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(127, 79, 36,0.5);  
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgba(219, 185, 157, 0.7);
+}
+
+
+th{
+    background-color: rgb(101, 109, 74);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    color:azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.names{
+    background-color: rgb(151, 163, 111);
+    border-bottom: none;
+
+}
+
+.emptycol{
+    background-color:  rgb(151, 163, 111);
+    border: none
+    
+}
+
+td{
+    text-align: center;    
+    border: 1px solid black;
+}
+
+.ending-text{
+    text-align: center;
+}
