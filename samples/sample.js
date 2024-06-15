@@ -1,7 +1,8 @@
-let myString = 'developer';
+let firstName = 'Antonia';
+let lastName = 'Frank';
 
-
-myNewString = myString.charAt(0).toUpperCase() + myString.slice(1);
-
-
-console.log(myNewString);
+const fullName = function (first, last){
+    return `${firstName} ${lastName}`
+   
+}
+console.log(fullName())

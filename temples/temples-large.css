@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
 }
 
 body{
@@ -9,11 +10,13 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 nav{
     background-color: aliceblue;
     box-shadow: 3px 3px 5px black;
 
+}
+header{
+    width: auto;
 }
 
 nav ul{
@@ -45,12 +48,11 @@ nav li:first-child{
     margin-right: auto;
 }
 
-
 .sidebar{
     position: fixed;
     top: 0;
     right: 0;
-    height: 50vh;
+    height: 100vh;
     width: 250px;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.315);
@@ -63,6 +65,10 @@ nav li:first-child{
 
 #closebtn{
     margin-left: auto ;
+}
+
+#menubtn{
+    display:none
 }
 
 .sidebar li{
@@ -85,19 +91,37 @@ nav li:first-child{
     margin-top: 40px;
 }
 
-figure{
+ figure{
     text-align: center;
-}
+ }
 
-.display{
-    max-width: 100%;
+
+.container{
+    width: auto;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(3, 1fr);
     margin: 10px;
     grid-column-gap: 20px;
     grid-row-gap: 30px;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+}
+
+.item{
+    border: 2px solid black;
+    justify-self: center;
+}
+
+footer{
+    background-color: aliceblue;
+    box-shadow: 3px 3px 5px black;
+    display: grid;
+    justify-content: center;
     
 }
+
+
+
+
+
