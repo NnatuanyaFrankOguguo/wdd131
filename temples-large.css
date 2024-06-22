@@ -1,3 +1,5 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"');
+
 *{
     margin: 0;
     padding: 0; 
@@ -7,7 +9,8 @@
 body{
     min-height: 100vh;
     background-color: aqua;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .navbar {
@@ -20,6 +23,8 @@ body{
     position: sticky;
     top: 0;
     z-index: 999;
+    font-family: 'Open Sans', sans-serif;
+
 
 }
 
