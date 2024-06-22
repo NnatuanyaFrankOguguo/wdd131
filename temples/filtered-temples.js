@@ -6,6 +6,7 @@ menuBtn.addEventListener('click', function(){
 
 });
 
+
 const closeBtn = document.querySelector('#closebtn');
 
 closeBtn.addEventListener('click', function(){
@@ -90,5 +91,131 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
+
+  {
+    templeName: "Accra Ghana",
+    location: "Independence Ave, Ghana",
+    dedicated: "2004, January, 11",
+    area: 17500,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-5151.jpg"
+  },
+
+  {
+    templeName: "Idaho Falls Idaho",
+    location: "1000 Memorial Dr, Idaho Falls",
+    dedicated: "1954, September, 23-25",
+    area: 85624,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/idaho-falls-idaho-temple/idaho-falls-idaho-temple-1911.jpg"
+
+  },
+
+  {
+    templeName: "Salt Lake Temple",
+    location: "Salt Lake City, Utah",
+    dedicated: "1893, April, 6-24",
+    area: 382207,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-38623.jpg"
+  }
   // Add more temple objects here...
 ];
+
+
+//FOR LATER REFERENCE CAUSE AM TRYING TO LOOP THROUGH THE OBJECT ARRAY
+// temples.forEach(function(Index) {
+//   console.log(temple);
+// });
+
+
+
+
+
+function sidebarDis(){
+  const closeSidebar = document.querySelector('.sidebar');
+  closeSidebar.style.display = 'none'
+}
+
+createTempleCard(temples);
+
+const smallSize = document.querySelector('.smallsize')
+smallSize.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area < 10000));
+  sidebarDis();
+});
+
+const largeSize = document.querySelector('#largesize')
+largeSize.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area > 90000));
+  sidebarDis();
+});
+
+const largeSizec = document.querySelector('.largesize')
+largeSizec.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => temple.area > 90000));
+  sidebarDis();
+});
+
+const oldBtn = document.querySelector('#oldBtn')
+oldBtn.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) < 1900));
+  sidebarDis();
+});
+
+const newOnes = document.querySelector('#newones')
+newOnes.addEventListener("click", () => {
+  createTempleCard(temples.filter(temple => parseInt(temple.dedicated.split(",")[0]) > 2000));
+  sidebarDis();
+});
+
+
+
+
+function createTempleCard(filteredTemples){
+
+  document.querySelector('.container').innerHTML = '';
+  filteredTemples.forEach(temple => {
+    let card = document.createElement('section');
+    let name = document.createElement('h3');
+    let location = document.createElement('p');
+    let dedicated = document.createElement('p');
+    let area = document.createElement('p');
+    let img = document.createElement('img');
+
+     
+
+    name.textContent = temple.templeName;
+    name.style.marginBottom = '15px';
+    location.innerHTML = `<span class="label"> Location: </span> ${temple.location}`;
+    dedicated.innerHTML = `<span class="label"> Dedicated: </span> ${temple.dedicated} `;
+    area.innerHTML = `<span class="label"> Size: </span> ${temple.area} sq ft`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+    
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    document.querySelector('.container').appendChild(card);
+  
+    
+
+});
+
+}
+
+// clickOld()
+
+// function clickOld(){
+//   const oldBtn = document.querySelector('#oldbtn');
+//   oldBtn.addEventListener('click', function(){
+//     const oldTemples = temples.filter(temple => temple.dedicated < 1900);
+//     console.log(oldTemples)
+//   })
+// }
+
+

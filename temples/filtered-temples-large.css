@@ -79,9 +79,10 @@ nav li:first-child{
     width: 100%
 }
 
-.image{
-    width: 250px;
-    height: 150px;
+.container section img{
+    width: 300px;
+    height: auto;
+    margin: 20px 0
 }
 
 .main-text{
@@ -90,11 +91,6 @@ nav li:first-child{
     font-weight: bold;
     margin-top: 40px;
 }
-
- figure{
-    text-align: center;
- }
-
 
 .container{
     width: auto;
@@ -107,6 +103,22 @@ nav li:first-child{
     justify-content: center;
     align-items: center; 
 }
+
+.label{
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+section{
+    background-color: rgba(153, 142, 142, 0.425);
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px white inset;
+    text-align: center;
+    padding: 15px 0;
+}
+
 
 .item{
     border: 2px solid black;
