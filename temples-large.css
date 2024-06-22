@@ -36,8 +36,11 @@ body{
 }
 
 #navbar_logo{
-    text-decoration: none;
+    font-size: 1.4rem;
     color: white;
+    margin: -7px 0px 0px 0px
+
+
 }
 
 .navbar_menu{
@@ -65,7 +68,7 @@ body{
 
 }
 
-.navbar_links:hover{
+nav a:hover{
     color:rgb(95, 95, 238);
     transition: all 0.3s ease;
 }

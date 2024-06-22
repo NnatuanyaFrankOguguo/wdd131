@@ -22,6 +22,6 @@ let formattedDate = `${year}/${month.toString().padStart(2, '0')}/${day.toString
 let formattedTime = `${hours.toString().padStart(2,'0')}:${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2, '0')}`;
 
 const lastModified = document.querySelector('#lastModified');
-lastModified.textContent = 'Last Modification: ' + formattedDate + ' ' + formattedTime;
+lastModified.innerHTML = 'Last Modification: ' + formattedDate + ' ' + formattedTime;
 lastModified.style.fontSize = '0.9em'
 lastModified.style.paddingLeft = '40px'
