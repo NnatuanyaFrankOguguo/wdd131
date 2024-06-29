@@ -29,6 +29,7 @@
         height: 50vh;
         z-index: -1;
         background-color: black;
+        color:aliceblue
         
 
     }
@@ -42,6 +43,7 @@
         z-index: 99;
         height: 50vh;
         font-size: 1.6rem;
+        color:aliceblue
         
 
     }
@@ -72,6 +74,7 @@
         display: table;
         width: 100%;
         padding: 10px 0;
+        color: aliceblue;
         
         
     }
