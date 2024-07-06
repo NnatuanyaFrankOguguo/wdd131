@@ -202,7 +202,7 @@ function createTempleCard(filteredTemples){
 
      
 
-    name.innerHTML =  `<h2> ${temple.templeName} </h2>`;
+    name.innerHTML =  `<h1> ${temple.templeName} </h1>`;
     name.style.marginBottom = '15px';
     location.innerHTML = `<span class="label"> Location: </span> ${temple.location}`;
     dedicated.innerHTML = `<span class="label"> Dedicated: </span> ${temple.dedicated} `;

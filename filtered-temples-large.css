@@ -20,6 +20,13 @@ nav{
 }
 header{
     width: auto;
+    position: sticky;
+    z-index: 1000;
+    top: 0
+}
+
+h2{
+    margin: 5px
 }
 
 nav ul{
