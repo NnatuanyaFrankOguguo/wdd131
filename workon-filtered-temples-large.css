@@ -1,0 +1,175 @@
+@import url('href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: aqua;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.navbar {
+    background: black;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.navbar_container{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 27px 50px;
+
+}
+
+#navbar_logo{
+    font-size: 1.4rem;
+    color: white;
+    margin: -7px 0px 0px 0px
+
+
+}
+
+.navbar_menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   list-style: none;
+   text-align: center;
+
+}
+
+.navbar_items{
+    height: 70px
+    
+}
+
+.navbar_links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-decoration: none;
+    padding: 0 20px;
+    height: 100%
+
+}
+
+nav a:hover{
+    color:rgb(95, 95, 238);
+    transition: all 0.3s ease;
+}
+
+
+.image{
+    width: 250px;
+    height: 150px;
+}
+
+.main-text{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+ figure{
+    text-align: center;
+ }
+
+
+.container{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.item{
+    border: 2px solid black;
+    justify-self: center;
+}
+
+.container section img{
+    width: 300px;
+    height: auto;
+    margin: 20px 0
+}
+
+.main-text{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.container{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.label{
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+section{
+    background-color: rgba(153, 142, 142, 0.425);
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px white inset;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+.item{
+    border: 2px solid black;
+    justify-self: center;
+}
+
+footer{
+    background-color: aliceblue;
+    box-shadow: 3px 3px 5px black;
+    display: grid;
+    justify-content: center;
+    color:black;
+    font-weight: 700;
+    
+}
+
+
+
+
+

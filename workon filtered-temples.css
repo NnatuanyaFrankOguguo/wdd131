@@ -1,0 +1,132 @@
+
+@media (max-width: 800px){
+
+    
+
+    .navbar_container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+
+    }
+
+
+    /* this styles here handles the invisibility of the navbar menu when the screensize goes into smaller screen  */
+    .navbar_menu{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background-color: black;
+        color:aliceblue
+        
+
+    }
+
+    /* the active classlist that was created by javascript is being styled here whenever is being clicked to appear*/
+    .navbar_menu.active{
+        background-color: rgba(17, 15, 15);
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+        color:aliceblue
+        
+
+    }
+
+    #navbar_logo{
+        margin: 25px 0 0 20px;
+    }
+
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin : 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+
+    }
+    
+    .navbar_items{
+        width: 100%;
+        margin: -15px 0;
+        
+            
+    }
+
+    .navbar_links{
+        text-align: center;
+        padding: 2rem;
+        display: table;
+        width: 100%;
+        padding: 10px 0;
+        color: aliceblue;
+        
+        
+    }
+
+    #mobile_menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+
+    }
+
+    .navbar_toggle .bar{
+        display: block;
+        cursor: pointer
+    }
+
+    #mobile_menu.is-active .bar:nth-child(2){
+    opacity: 0;
+    }
+
+    #mobile_menu.is-active .bar:nth-child(1){
+    transform: translatey(8px) rotate(45deg);
+    }
+
+    #mobile_menu.is-active .bar:nth-child(3){
+    transform: translatey(-8px) rotate(-45deg);
+    }
+
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+
+    #menubtn{
+        display: block
+    }
+
+
+    
+
+@media (max-width: 540px){
+
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+}
