@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Nnatuanya Frank - Picture Album">
+    <meta name="author" content="Nnatuanya Frank">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='styles/form.css'>
+    <script src="scripts/form.js" defer></script>
+</head>  
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="GET">
+            <!-- <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname"> Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Last, first middle" required>
+                </div>
+                <div class="form-item column2">
+                    <label for="useremail"> Email:</label>
+                    <input type="email" id="useremail" name="useremail" placeholder="abcdef@gmail.com" required>
+                </div>
+
+            </fieldset> -->
+
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item">
+                    <label for="product"> Product Name</label>
+                    <select name="products" id="product">
+                        <option value=" " disabled selected> Choose a Product... </option>
+    
+                    </select>
+                </div>
+
+                <div>
+                    Overall Rating
+
+                    <div>
+                        <label for="one"> &star;</label>
+                        <input type="radio" name="rating" id="one" value=" &star;">
+                    </div>
+                    <div>
+                        <label for="two"> &star;&star;</label>
+                        <input type="radio" name="rating" id="two" value="&star;&star;">
+                    </div>
+                    <div>
+                        <label for="three"> &star;&star;&star;</label>
+                        <input type="radio" name="rating" id="three" value="&star;&star;&star;">
+                    </div>
+                    <div>
+                        <label for="four"> &star;&star;&star;&star;</label>
+                        <input type="radio" name="rating" id="four" value="&star;&star;&star;&star;">
+                    </div>
+                    <div>
+                        <label for="five"> &star;&star;&star;&star;&star;</label>
+                        <input type="radio" name="rating" id="five" value="five">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="date">Date of Installation</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+
+                <div>
+                    <div>
+                        Which features did you find useful in the product? <span>(Check all that apply)</span>
+                    </div>
+
+                    <label for="durability"> Durability</label>
+                    <input type="checkbox" name="Features" id="durability" value="durability">
+
+                    <label for="easyness"> Ease of Use</label>
+                    <input type="checkbox" name="Features" id="easyness" value="easyness" >
+
+                    <label for="performance"> Performance</label>
+                    <input type="checkbox" name="Features" id="Performance" value="Performance" >
+
+                    <label for="design"> Design</label>
+                    <input type="checkbox" name="Features" id="design" value="design">
+                    
+                    
+                </div>
+                
+                <div class="form-item">
+                    <label for="written "> Written Review <span>(Optional)</span>
+                    <textarea  id="written" name=" Written Review" placeholder=" Stillwater florida, Amsterdam Netherlands, Tibuktu Mali" rows="4"></textarea>
+                </div>
+
+                <div >
+                    <label for="name"> Your Name<span>(Optional)</span></label>
+                    <input type="text" id="name" name="full-name">
+                </div>
+                
+            </fieldset>
+            <button type="submit"> Submit Poll</button>
+            <h2>Number of Reviews Submitted: <span id="reviewCount">0</span></h2>
+
+        </form>
+    </main>
+
+    <footer>
+        <div>
+            <span id="currentyear"></span>
+        </div>
+
+        <div id="lastModified">
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
