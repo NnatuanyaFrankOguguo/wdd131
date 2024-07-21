@@ -7,26 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses and sections</title>
     <script src="debugging.js" defer></script>
+    <link rel="stylesheet" href="debug.css">
   </head>
-  <body>
-    <h1 id="courseName"></h1>
-    <h2 id="courseCode"></h2>
-    <label for="sectionNumber">Section Number</label>
-    <input id="sectionNumber" />
-    <button id="enrollStudent">Enroll Student</button>
-    <button id="dropStudent">Drop Student</button>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Section#</th>
-          <th>Room#</th>
-          <th>#Enrolled</th>
-          <th>Days</th>
-          <th>Instructor</th>
-        </tr>
-      </thead>
-      <tbody id="sections"></tbody>
-    </table>
-  </body>
+
+<nav>
+  <div class="hamburger" id="hamburger">
+    &#9776; Menu
+  </div>
+  <div class="dropdown-content" id="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</nav>
+
+<div class="content">
+  Content below the hamburger menu
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+ 
+    
 </html>

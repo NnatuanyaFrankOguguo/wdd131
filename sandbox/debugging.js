@@ -1,73 +1,81 @@
-const aCourse = {
-  code: 'CSE121b',
-  name: 'Javascript Language',
-  sections: [
-    {
-      sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'
-    },
-    {
-      sectionNum: 2,
-      roomNum: 'STC 347',
-      enrolled: 28,
-      days: 'TTh',
-      instructor: 'Sis A'
-    },
-  ],
+// const aCourse = {
+//   code: 'CSE121b',
+//   name: 'Javascript Language',
+//   sections: [
+//     {
+//       sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'
+//     },
+//     {
+//       sectionNum: 2,
+//       roomNum: 'STC 347',
+//       enrolled: 28,
+//       days: 'TTh',
+//       instructor: 'Sis A'
+//     },
+//   ],
 
-  enrollStudent: function (sectionNum) {
-    // find the right section...Array.findIndex will work here
-    const sectionIndex = this.sections.findIndex(
-      (section) => section.sectionNum == sectionNum
-    );
-    if (sectionIndex >= 0) {
-      this.sections[sectionIndex].enrolled++;
-      renderSections(this.sections);
-    }
-  },
-  dropStudent: function (sectionNum) {
-    // find the right section...Array.findIndex will work here
-    const sectionIndex = this.sections.findIndex(
-      (section) => section.sectionNum == sectionNum
-    );
-    if (sectionIndex >= 0) {
-      this.sections[sectionIndex].enrolled--;
-      renderSections(this.sections);
-    }
-  },
+//   enrollStudent: function (sectionNum) {
+//     // find the right section...Array.findIndex will work here
+//     const sectionIndex = this.sections.findIndex(
+//       (section) => section.sectionNum == sectionNum
+//     );
+//     if (sectionIndex >= 0) {
+//       this.sections[sectionIndex].enrolled++;
+//       renderSections(this.sections);
+//     }
+//   },
+//   dropStudent: function (sectionNum) {
+//     // find the right section...Array.findIndex will work here
+//     const sectionIndex = this.sections.findIndex(
+//       (section) => section.sectionNum == sectionNum
+//     );
+//     if (sectionIndex >= 0) {
+//       this.sections[sectionIndex].enrolled--;
+//       renderSections(this.sections);
+//     }
+//   },
 
-};
+// };
 
 
-function setCourseInfo(course){
-  const courseName = document.querySelector('#courseName');
-  const courseCode = document.querySelector('#courseCode');
-  courseName.textContent = aCourse.name;
-  courseCode.textContent = aCourse.code;
-}; 
+// function setCourseInfo(course){
+//   const courseName = document.querySelector('#courseName');
+//   const courseCode = document.querySelector('#courseCode');
+//   courseName.textContent = aCourse.name;
+//   courseCode.textContent = aCourse.code;
+// }; 
 
-//creating a function that outputs the section into the table identified by #section and pasting them in html
+// //creating a function that outputs the section into the table identified by #section and pasting them in html
 
-function renderSections(sections) {
-  const html = sections.map(
-    (section) => `<tr>
-    <td>${section.sectionNum}</td>
-    <td>${section.roomNum}</td>
-    <td>${section.enrolled}</td>
-    <td>${section.days}</td>
-    <td>${section.instructor}</td></tr>`
-  );
-  document.querySelector("#sections").innerHTML = html.join("");
-}
+// function renderSections(sections) {
+//   const html = sections.map(
+//     (section) => `<tr>
+//     <td>${section.sectionNum}</td>
+//     <td>${section.roomNum}</td>
+//     <td>${section.enrolled}</td>
+//     <td>${section.days}</td>
+//     <td>${section.instructor}</td></tr>`
+// //   );
+// //   document.querySelector("#sections").innerHTML = html.join("");
+// // }
 
-document.querySelector("#enrollStudent").addEventListener("click", function () {
-  const sectionNum = document.querySelector("#sectionNumber").value;
-  aCourse.enrollStudent(sectionNum);
+// // document.querySelector("#enrollStudent").addEventListener("click", function () {
+// //   const sectionNum = document.querySelector("#sectionNumber").value;
+// //   aCourse.enrollStudent(sectionNum);
+// // });
+// // document.querySelector("#dropStudent").addEventListener("click", function () {
+// //   const sectionNum = document.querySelector("#sectionNumber").value;
+// //   aCourse.dropStudent(sectionNum);
+// // });
+
+document.getElementById('hamburger').addEventListener('click', function() {
+  var dropdown = document.getElementById('dropdown-content');
+  if (dropdown.style.display === 'block') {
+    dropdown.style.display = 'none';
+  } else {
+    dropdown.style.display = 'block';
+  }
 });
-document.querySelector("#dropStudent").addEventListener("click", function () {
-  const sectionNum = document.querySelector("#sectionNumber").value;
-  aCourse.dropStudent(sectionNum);
-});
-
 
 
 

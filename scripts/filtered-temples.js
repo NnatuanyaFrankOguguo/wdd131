@@ -20,6 +20,7 @@ let year = now.getFullYear();
 const currentYear = document.querySelector('#currentyear');
 currentYear.textContent = '© ' + year + ' ♠️ Nnatuanya Frank Oguguo ♠️ Nigeria'
 
+        
 let month = now.getMonth() + 1;
 let day = now.getDate();
 let hours = now.getHours();

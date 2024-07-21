@@ -1,0 +1,42 @@
+
+nav {
+  position: relative;
+  background-color: #333;
+  padding: 14px 16px;
+}
+
+.hamburger {
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  bottom: 100%; /* Position the dropdown above the button */
+  left: 0;
+}
+
+/* Dropdown content links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Content below the navbar */
+.content {
+  padding: 16px;
+  background-color: #f1f1f1;
+  margin-top: 50px; /* Adjust this value as needed to provide space between the navbar and content */
+}
+ 

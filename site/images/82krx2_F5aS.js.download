@@ -1,0 +1,4 @@
+;/*FB_PKG_DELIM*/
+
+__d("LSDeleteThenInsertIgThreadLabel",[],(function(a,b,c,d,e,f){function a(){var a=arguments,b=a[a.length-1],c=[];return b.sequence([function(c){return b.db.table(318).put({threadKey:a[0],labelType:a[1],labelTimestampMs:a[2]})},function(a){return b.resolve(c)}])}e.exports=a}),null);
+__d("LSDeserializeFromJsonIntoDictionaryV2.nop",["LSDict","LSJson","Promise","unrecoverableViolation"],(function(a,b,c,d,e,f,g){"use strict";var h;a=function(a,e,f){a=d("LSJson").parse(f,{useLSTypes:!0});if(a instanceof c("LSDict"))return(h||(h=b("Promise"))).resolve([a]);throw c("unrecoverableViolation")("unexpected Dictionary type","messenger_web_product")};g["default"]=a}),98);
